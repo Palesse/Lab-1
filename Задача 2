@@ -1,0 +1,18 @@
+#include "stdio.h"
+#include "math.h"
+
+int main() {
+    
+    float r;
+    float b;
+    printf("Введите радиус круга:\n");
+    scanf("%f", &r);
+    printf("Введите сторону квадратного отверстия:\n");
+    scanf("%f", &b);
+    if (b * sqrt(2) > r * 2) 
+        printf("В данном круге нельзя вырезать такое отверстие");
+      else 
+        printf("В данном круге можно вырезать такое отверстие");
+
+    return 0;
+}
